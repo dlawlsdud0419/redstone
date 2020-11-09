@@ -1,0 +1,55 @@
+.cosbody-box{
+    display: flex;
+    margin: 8px 12px;
+    animation-name: box;
+    -moz-animation: box 4s; /* Firefox */
+    -webkit-animation: box 4s; /* Safari and Chrome */
+    -o-animation: box 4s; /* Opera */
+}
+
+@keyframes box {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+        
+    }
+}
+@-moz-keyframes box { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes box { /* Safari and Chrome */
+    from {
+        opacity:0;
+        
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes box { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.cosbody-job{
+    margin: 0 auto;
+}
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:middle;background-color: #263343; color: #fff; width: 150px;font-weight: bold;}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:middle;color:#fff;background-color: #263343;width:120px;}
+.tg .tg-0pky{border-color:inherit;text-align:center;vertical-align:middle;background-color: #000000; color: #fff;width: 168px;}
