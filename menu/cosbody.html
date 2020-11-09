@@ -14,7 +14,7 @@
             <nav id="navbar" class="navbar">
                 <div class="navbar-logo">
                     <i class="fa fa-gg" aria-hidden="true"></i>
-                    <a href="">RED STONE</a>
+                    <a href="../index.html">RED STONE</a>
                 </div>
 
                 <ul class="navbar-menu">
@@ -35,6 +35,39 @@
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </a>
             </nav> 
+            <div>
+              <select name="job" class="select-job" id="value" onchange="filter(this)">
+                <option value="0">모두</option>
+                <option value="1">견습기사</option>
+                <option value="2">전사</option>
+                <option value="3">마법궁수</option>
+                <option value="4">마법창병</option>
+                <option value="5">마법사</option>
+                <option value="6">늑대인간</option>
+                <option value="7">사제</option>
+                <option value="8">타락천사</option>
+                <option value="9">조련사</option>
+                <option value="10">소환사</option>
+                <option value="11">도둑</option>
+                <option value="12">무도가</option>
+                <option value="13">공주</option>
+                <option value="14">변신소녀</option>
+                <option value="15">강신술사</option>
+                <option value="16">악마</option>
+                <option value="17">영술사</option>
+                <option value="18">투사</option>
+                <option value="19">광학사</option>
+                <option value="20">악마</option>
+                <option value="17">영술사</option>
+                <option value="18">투사</option>
+                <option value="19">광학사</option>
+                <option value="20">수인</option>
+                <option value="21">메이드</option>
+                <option value="22">흑마술사</option>
+                <option value="23">마총사</option>
+                <option value="24">연금술사</option>
+              </select> 
+            </div>
             <div class="cosbody-box">
                 <div class="cosbody-job">
                     <table class="tg">
@@ -56,7 +89,7 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">견습기사</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_001a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_01a.jpg" /></td>
@@ -71,7 +104,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Knight_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Knight_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">전사</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_002a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_02a.jpg" /></td>
@@ -86,7 +119,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Warrior_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Warrior_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">마법궁수</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_006a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_06a.jpg" /></td>
@@ -101,7 +134,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Archer_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Archer_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">마법창병</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_005a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_05a.jpg" /></td>
@@ -116,7 +149,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Lancer_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Lancer_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">마법사</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_003a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_03a.jpg" /></td>
@@ -131,7 +164,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Wizard_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Wizard_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">늑대인간</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_004a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_04a.jpg" /></td>
@@ -146,7 +179,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Wolf_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Wolf_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">사제</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_009a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_09a.jpg" /></td>
@@ -161,7 +194,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Priest_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Priest_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">타락천사</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_010a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_10a.jpg" /></td>
@@ -176,7 +209,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Fallen_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Fallen_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">조련사</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_011a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_11a.jpg" /></td>
@@ -191,7 +224,7 @@
                             <td class="tg-0pky"><img src="../images/costume/BeastTamer_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Beasttamer_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">소환사</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_012a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_12a.jpg" /></td>
@@ -206,7 +239,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Summoner_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Summoner_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">도둑</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_007a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_07a.jpg" /></td>
@@ -221,7 +254,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Rogue_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Rogue_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">무도가</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_008a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_08a.jpg" /></td>
@@ -236,7 +269,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Monk_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Monk_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">공주</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_013a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_13a.jpg" /></td>
@@ -251,7 +284,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Princess_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Princess_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">변신소녀</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_014a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_14a.jpg" /></td>
@@ -266,7 +299,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Magicalgirl_cos_Collabo03_214-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Magicalgirl_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">강신술사</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_015a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_15a.jpg" /></td>
@@ -281,7 +314,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Necromancer_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Necromancer_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">악마</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_016a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_16a.jpg" /></td>
@@ -296,7 +329,7 @@
                             <td class="tg-0pky"><img src="../images/costume/devil_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/devil_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">영술사</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_017a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_17a.jpg" /></td>
@@ -311,7 +344,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Soulbringer_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Soulbringer_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">투사</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_018a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_18a.jpg" /></td>
@@ -326,7 +359,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Campion_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Campion_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">광학사</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_019a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_19a.jpg" /></td>
@@ -341,7 +374,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Opticalist_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Opticalist_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">수인</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_020a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_20a.jpg" /></td>
@@ -356,7 +389,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Beastman_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Beastman_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">메이드</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_021a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_21a.jpg" /></td>
@@ -371,7 +404,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Maid_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Maid_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">흑마술사</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_022a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_22a.jpg" /></td>
@@ -386,7 +419,7 @@
                             <td class="tg-0pky"><img src="../images/costume/DemonSorceress_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/DemonSorceress_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">마총사</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_023a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_23a.jpg" /></td>
@@ -401,7 +434,7 @@
                             <td class="tg-0pky"><img src="../images/costume/Musketeer_cos_Collabo03-1.gif" /></td>
                             <td class="tg-0pky"><img src="../images/costume/Musketeer_cos_Collabo04-1.gif" /></td>
                           </tr>
-                          <tr>
+                          <tr id="tg-row" class="tg-row">
                             <td class="tg-7btt">연금술사</td>
                             <td class="tg-0pky"><img src="../images/costume/normal_024a.jpg" /></td>
                             <td class="tg-0pky"><img src="../images/costume/cos_formal_24a.jpg" /></td>
@@ -422,7 +455,7 @@
             </div>
             
     </div>
-    <script src="../js/index.js"></script>
     <script src="../js/nav.js"></script>
+    <script src="../js/cosbody.js"></script>
 </body>
 </html>

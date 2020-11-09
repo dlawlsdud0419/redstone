@@ -55,8 +55,15 @@
 .tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:middle;color:#fff;background-color: #263343;}
 .tg .tg-0pky{border-color:inherit;text-align:center;vertical-align:middle;background-color: #000000; color: #fff;}
 
-
-
+.select-job{
+    display: none;
+}
+select {
+    margin: 0 auto;
+    padding: 8px 12px;
+    margin-top: 10px;
+    text-align: center;
+}
 @media screen and (max-width:768px) {
     table, thead, tbody, th, td, tr { 
 		display: block; 
@@ -85,7 +92,10 @@
 		width: 45%; 
 		padding-right: 10px; 
 		white-space: nowrap;
-	}
+    }
+    .select-job{
+        display: block;
+    }
 	
 	/*
 	Label the data

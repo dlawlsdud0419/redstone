@@ -13,8 +13,6 @@ function init(){
       }, 6000);
       setTimeout(function() {
         document.getElementById("navbar").style.display ='flex';
-        document.getElementById("prev").style.opacity = '1';
-        document.getElementById("next").style.opacity = '1';
       }, 7000);
       
       //document.getElementById("overlay").classList.add("is-open");
