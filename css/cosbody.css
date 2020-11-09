@@ -1,4 +1,5 @@
 .cosbody-box{
+    overflow-x:auto;
     display: flex;
     margin: 8px 12px;
     animation-name: box;
