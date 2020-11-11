@@ -109,7 +109,7 @@ table {
     font-weight: normal;
     position: absolute;
     bottom: calc(50% - 30px);
-    left: calc(50% - 20px);
+    left: calc(50% - 28px);
 }
 
 /*.loading-bar:before {

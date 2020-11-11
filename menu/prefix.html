@@ -26,6 +26,13 @@
         }
       }
     }
+    function reset(){
+       document.getElementById("value").value = "";
+       item = document.getElementsByClassName("item");
+       for(var i=0; i<item.length;i++){
+        item[i].style.display = "flex";
+       }
+    }
 </script>
 <body>
     <div id="wrap">
@@ -54,8 +61,11 @@
                 </a>
             </nav> 
             <div class="prefix-box">
-                <div class="search">
-                    <input onkeyup="filter()" type="text" id="value" class="search" placeholder="Type to Search">
+                <div class="search-box">
+                    <div class="search">
+                        <input onkeyup="filter()" type="text" id="value" class="search-text" placeholder="접두사 이름검색(공백 구분합니다.)">
+                        <span class="reset-input"><a href="javascript:void(0);" onclick="reset()"><i class="fa fa-times" aria-hidden="true"></i></a></span>
+                    </div>
                 </div>
                 <div class="prefix-container">
                     <div class="item">
@@ -70,7 +80,7 @@
                         <span class="type">일반</span>
                         <span class="image"><img src="../images/item/iconItem_0964.png"/></span>
                         <span class="name">힘 세지는</span>
-                        <span class="ability">힘 +1~2 / 레벨 8~12</span>
+                        <span class="ability">힘 +1~2<br>레벨 8~12</span>
                         <span class="level-limit">레벨 제한 +30</span>
                         <span class="useitem">헬멧, 벨트, 부츠, 방패, 귀걸이, 망토, 전용 갑옷, 보석</span>
                     </div>
@@ -78,7 +88,7 @@
                         <span class="type">일반</span>
                         <span class="image"><img src="../images/item/iconItem_0964.png"/></span>
                         <span class="name">강해지는</span>
-                        <span class="ability">힘 +1 / 레벨 2~3</span>
+                        <span class="ability">힘 +1<br>레벨 2~3</span>
                         <span class="level-limit">레벨 제한 +75</span>
                         <span class="useitem">장갑, 발톱, 한손검, 양손검, 이빨, 메이스, 단도, 활, 창, 손톱 무기, 빗자루, 낫, 쌍검</span>
                     </div>
@@ -150,7 +160,7 @@
                         <span class="type">숙명</span>
                         <span class="image"><img src="../images/item/iconItem_3589.png"/></span>
                         <span class="name">가이루트의</span>
-                        <span class="ability">힘 +2 / 레벨 3</span>
+                        <span class="ability">힘 +2<br>레벨 3</span>
                         <span class="level-limit">레벨 제한 +0</span>
                         <span class="useitem">장갑, 발톱, 한손검, 양손검, 이빨, 메이스, 단도, 활, 창, 빗자루, 쌍검, 다크 코어, 쌍권총<br><br>※ '가이루트의' 접두사는 첫 번째와 두 번째 접두사에 사용가능하다.</span>
                     </div>
@@ -159,7 +169,6 @@
                 </div>
             </div>
     </div>
-    <script src="../js/index.js"></script>
     <script src="../js/nav.js"></script>
 
 </body>
