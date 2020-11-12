@@ -20,7 +20,7 @@
       for(i=0;i<item.length;i++){
         name = item[i].getElementsByClassName("name");
         if(name[0].innerHTML.toUpperCase().indexOf(value) > -1){
-          item[i].style.display = "flex";
+          item[i].style.display = "";
         }else{
           item[i].style.display = "none";
         }
@@ -30,7 +30,7 @@
        document.getElementById("value").value = "";
        item = document.getElementsByClassName("item");
        for(var i=0; i<item.length;i++){
-        item[i].style.display = "flex";
+        item[i].style.display = "";
        }
     }
 </script>
@@ -68,107 +68,264 @@
                     </div>
                 </div>
                 <div class="prefix-container">
-                    <div class="item">
-                        <span class="type">종류</span>
-                        <span class="image">이미지</span>
-                        <span class="name">이름</span>
-                        <span class="ability">옵션</span>
-                        <span class="level-limit">레벨제한</span>
-                        <span class="useitem">내용</span>
-                    </div>
-                    <div class="item">
-                        <span class="type">일반</span>
-                        <span class="image"><img src="../images/item/iconItem_0964.png"/></span>
-                        <span class="name">힘 세지는</span>
-                        <span class="ability">힘 +1~2<br>레벨 8~12</span>
-                        <span class="level-limit">레벨 제한 +30</span>
-                        <span class="useitem">헬멧, 벨트, 부츠, 방패, 귀걸이, 망토, 전용 갑옷, 보석</span>
-                    </div>
-                    <div class="item">
-                        <span class="type">일반</span>
-                        <span class="image"><img src="../images/item/iconItem_0964.png"/></span>
-                        <span class="name">강해지는</span>
-                        <span class="ability">힘 +1<br>레벨 2~3</span>
-                        <span class="level-limit">레벨 제한 +75</span>
-                        <span class="useitem">장갑, 발톱, 한손검, 양손검, 이빨, 메이스, 단도, 활, 창, 손톱 무기, 빗자루, 낫, 쌍검</span>
-                    </div>
-                    <div class="item">
-                        <span class="type"></span>
-                        <span class="image"><img src="../images/item/"/></span>
-                        <span class="name"></span>
-                        <span class="ability"></span>
-                        <span class="level-limit"></span>
-                        <span class="useitem"></span>
-                    </div>
-                    <div class="item">
-                        <span class="type">숙명</span>
-                        <span class="image"><img src="../images/item/iconItem_3589.png"/></span>
-                        <span class="name">샌슨의</span>
-                        <span class="ability">힘 +250</span>
-                        <span class="level-limit">레벨 제한 +0</span>
-                        <span class="useitem">장갑, 한손검, 이빨, 메이스, 창, 다크 코어<br><br>※ '샌슨의' 접두사는 첫 번째 접두사에 사용가능하다.</span>
-                    </div>
-                    <div class="item">
-                        <span class="type">숙명</span>
-                        <span class="image"><img src="../images/item/iconItem_3589.png"/></span>
-                        <span class="name">세리의</span>
-                        <span class="ability">민첩성 +250</span>
-                        <span class="level-limit">레벨 제한 +0</span>
-                        <span class="useitem">팔찌, 단도, 활, 창, 슬링, 쌍권총<br><br>※ '세리의' 접두사는 첫 번째 접두사에 사용가능하다.</span>
-                    </div>
-                    <div class="item">
-                        <span class="type">숙명</span>
-                        <span class="image"><img src="../images/item/iconItem_3589.png"/></span>
-                        <span class="name">툰가의</span>
-                        <span class="ability">건강 +250</span>
-                        <span class="level-limit">레벨 제한 +0</span>
-                        <span class="useitem">벨트, 이빨, 메이스, 활, 슬링, 다크 코어, 쌍권총<br><br>※ '툰가의' 접두사는 첫 번째 접두사에 사용가능하다.</span>
-                    </div>
-                    <div class="item">
-                        <span class="type">숙명</span>
-                        <span class="image"><img src="../images/item/iconItem_3589.png"/></span>
-                        <span class="name">핸슨의</span>
-                        <span class="ability">운 +250</span>
-                        <span class="level-limit">레벨 제한 +0</span>
-                        <span class="useitem">헬멧, 관, 장갑, 장갑 대용, 발톱, 팔찌, 목걸이<br><br>※ '핸슨의' 접두사는 세 번째 접두사에 사용가능하다.</span>
-                    </div>
-                    <div class="item">
-                        <span class="type">숙명</span>
-                        <span class="image"><img src="../images/item/iconItem_3589.png"/></span>
-                        <span class="name">티렌의</span>
-                        <span class="ability">지식 +250</span>
-                        <span class="level-limit">레벨 제한 +0</span>
-                        <span class="useitem">관, 마법 지팡이, 날개, 피리, 마술봉<br><br>※ '티렌의' 접두사는 두 번째 접두사에 사용가능하다.</span>
-                    </div>
-                    <div class="item">
-                        <span class="type">숙명</span>
-                        <span class="image"><img src="../images/item/iconItem_3589.png"/></span>
-                        <span class="name">마퍼스</span>
-                        <span class="ability">지혜 +250</span>
-                        <span class="level-limit">레벨 제한 +0</span>
-                        <span class="useitem">목걸이, 날개, 피리, 마술봉, 채찍, 낫, 손톱 무기, 책, 빗자루, 쌍검<br><br>※ '마퍼스' 접두사는 두 번째 접두사에 사용가능하다.</span>
-                    </div>
-                    <div class="item">
-                        <span class="type">숙명</span>
-                        <span class="image"><img src="../images/item/iconItem_3589.png"/></span>
-                        <span class="name">짐모리</span>
-                        <span class="ability">카리스마 +250</span>
-                        <span class="level-limit">레벨 제한 +0</span>
-                        <span class="useitem">관, 마법 지팡이, 날개, 마술봉, 채찍, 낫, 손톱 무기, 책 빗자루, 쌍검, 다크 코어<br><br>※ '짐모리' 접두사는 두 번째 접두사에 사용가능하다.</span>
-                    </div>
-                    <div class="item">
-                        <span class="type">숙명</span>
-                        <span class="image"><img src="../images/item/iconItem_3589.png"/></span>
-                        <span class="name">가이루트의</span>
-                        <span class="ability">힘 +2<br>레벨 3</span>
-                        <span class="level-limit">레벨 제한 +0</span>
-                        <span class="useitem">장갑, 발톱, 한손검, 양손검, 이빨, 메이스, 단도, 활, 창, 빗자루, 쌍검, 다크 코어, 쌍권총<br><br>※ '가이루트의' 접두사는 첫 번째와 두 번째 접두사에 사용가능하다.</span>
-                    </div>
-                    
-
+                    <table>
+                        <colgroup>
+                            <col width="10%"/>
+                            <col width="10%"/>                
+                            <col width="10%"/>                
+                            <col width="10%"/> 
+                            <col width="10%"/>                
+                            <col width="*" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="th-style">종류</th>
+                                <th class="th-style">이미지</th>
+                                <th class="th-style">이름</th>
+                                <th class="th-style">옵션</th>
+                                <th class="th-style">레벨제한</th>
+                                <th class="th-style">내용</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">힘 세지는</td>
+                                <td class="ability">힘 +1~2<br>레벨 8~12</td>
+                                <td class="level-limit">레벨 제한 +30</td>
+                                <td class="useitem">헬멧, 벨트, 부츠, 방패, 귀걸이, 망토, 전용 갑옷, 보석</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">강해지는</td>
+                                <td class="ability">힘 +1<br>레벨 2~3</td>
+                                <td class="level-limit">레벨 제한 +75</td>
+                                <td class="useitem">장갑, 발톱, 한손검, 양손검, 이빨, 메이스, 단도, 활, 창, 손톱 무기, 빗자루, 낫, 쌍검</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">재빨라지는</td>
+                                <td class="ability">민첩 +1~2<br>레벨 8~12</td>
+                                <td class="level-limit">레벨 제한 +30</td>
+                                <td class="useitem">헬멧, 장갑, 벨트, 방패, 귀걸이, 망토, 전용 갑옷, 보석</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">민첩해지는</td>
+                                <td class="ability">민첩 +1<br>레벨 2~3</td>
+                                <td class="level-limit">레벨 제한 +75</td>
+                                <td class="useitem">발톱, 부츠, 한손검, 양손검, 이빨, 메이스, 단도, 활, 창, 손톱무기, 빗자루, 낫, 쌍검</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">튼튼해지는</td>
+                                <td class="ability">건강 +1~2<br>레벨 8~12</td>
+                                <td class="level-limit">레벨 제한 +30</td>
+                                <td class="useitem">헬멧, 전용 값옷, 장갑, 부츠, 방패, 귀걸이, 망토, 보석</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">건강해지는</td>
+                                <td class="ability">건강 +1<br>레벨 2~3</td>
+                                <td class="level-limit">레벨 제한 +75</td>
+                                <td class="useitem">한손검, 양손검, 창, 활, 단도, 이빨, 메이스, 손톱무기, 낫, 발톱, 벨트</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">운좋아지는</td>
+                                <td class="ability">운 +1~2<br>레벨 8~12</td>
+                                <td class="level-limit">레벨 제한 +30</td>
+                                <td class="useitem">헬멧, 장갑 대용, 귀걸이, 망토, 전용 값옷, 방패, 보석</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">행복해지는</td>
+                                <td class="ability">운 +1<br>레벨 2~3</td>
+                                <td class="level-limit">레벨 제한 +75</td>
+                                <td class="useitem">관, 장갑, 방톱, 팔찌, 벨트, 부츠, 목걸이, 모든 무기</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">똑똑해지는</td>
+                                <td class="ability">지식 +1~2<br>레벨 8~12</td>
+                                <td class="level-limit">레벨 제한 +30</td>
+                                <td class="useitem">장갑 대용, 팔찌, 목걸이, 귀걸이, 망토, 전용 갑옷, 보석</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">다식해지는</td>
+                                <td class="ability">지식 +1<br>레벨 2~3</td>
+                                <td class="level-limit">레벨 제한 +75</td>
+                                <td class="useitem">관, 마법지팡이, 날개, 피리, 슬링, 마술봉, 채찍, 책, 다크코어, 쌍검, 빗자루</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">현명해지는</td>
+                                <td class="ability">지혜 +1~2<br>레벨 8~12</td>
+                                <td class="level-limit">레벨 제한 +30</td>
+                                <td class="useitem">관, 장갑 대용, 목걸이, 귀걸이, 망토, 전용 갑옷, 보석</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">지혜로워지는</td>
+                                <td class="ability">지혜 +1<br>레벨 2~3</td>
+                                <td class="level-limit">레벨 제한 +75</td>
+                                <td class="useitem">팔찌, 마법지팡이, 날개, 피리, 슬링, 마술봉, 채찍, 책, 다크코어, 쌍검, 빗자루</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">근엄해지는</td>
+                                <td class="ability">카리스마 +1~2<br>레벨 8~12</td>
+                                <td class="level-limit">레벨 제한 +30</td>
+                                <td class="useitem">관, 장갑 대용, 팔찌, 귀걸이, 망토, 전용 갑옷, 보석</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">존경스러워지는</td>
+                                <td class="ability">카리스마 +1<br>레벨 2~3</td>
+                                <td class="level-limit">레벨 제한 +75</td>
+                                <td class="useitem">목걸이, 마법지팡이, 날개, 피리, 슬링, 마술봉, 채찍, 책, 다크코어, 쌍검, 빗자루</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name"></td>
+                                <td class="ability"><br></td>
+                                <td class="level-limit"></td>
+                                <td class="useitem"></td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">숙명</td>
+                                <td class="image"><img src="../images/item/iconItem_3589.png"/></td>
+                                <td class="name">샌슨의</td>
+                                <td class="ability">힘 +250</td>
+                                <td class="level-limit">레벨 제한 +0</td>
+                                <td class="useitem">장갑, 한손검, 이빨, 메이스, 창, 다크 코어<br>※ '샌슨의' 접두사는 첫 번째 접두사에 사용가능하다.</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">숙명</td>
+                                <td class="image"><img src="../images/item/iconItem_3589.png"/></td>
+                                <td class="name">세리의</td>
+                                <td class="ability">민첩성 +250</td>
+                                <td class="level-limit">레벨 제한 +0</td>
+                                <td class="useitem">팔찌, 단도, 활, 창, 슬링, 쌍권총<br>※ '세리의' 접두사는 첫 번째 접두사에 사용가능하다.</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">숙명</td>
+                                <td class="image"><img src="../images/item/iconItem_3589.png"/></td>
+                                <td class="name">툰가의</td>
+                                <td class="ability">건강 +250</td>
+                                <td class="level-limit">레벨 제한 +0</td>
+                                <td class="useitem">벨트, 이빨, 메이스, 활, 슬링, 다크 코어, 쌍권총<br>※ '툰가의' 접두사는 첫 번째 접두사에 사용가능하다.</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">숙명</td>
+                                <td class="image"><img src="../images/item/iconItem_3589.png"/></td>
+                                <td class="name">핸슨의</td>
+                                <td class="ability">운 +250</td>
+                                <td class="level-limit">레벨 제한 +0</td>
+                                <td class="useitem">헬멧, 관, 장갑, 장갑 대용, 발톱, 팔찌, 목걸이<br>※ '핸슨의' 접두사는 세 번째 접두사에 사용가능하다.</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">숙명</td>
+                                <td class="image"><img src="../images/item/iconItem_3589.png"/></td>
+                                <td class="name">티렌의</td>
+                                <td class="ability">지식 +250</td>
+                                <td class="level-limit">레벨 제한 +0</td>
+                                <td class="useitem">관, 마법 지팡이, 날개, 피리, 마술봉<br>※ '티렌의' 접두사는 두 번째 접두사에 사용가능하다.</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">숙명</td>
+                                <td class="image"><img src="../images/item/iconItem_3589.png"/></td>
+                                <td class="name">마퍼스</td>
+                                <td class="ability">지혜 +250</td>
+                                <td class="level-limit">레벨 제한 +0</td>
+                                <td class="useitem">목걸이, 날개, 피리, 마술봉, 채찍, 낫, 손톱 무기, 책, 빗자루, 쌍검<br>※ '마퍼스' 접두사는 두 번째 접두사에 사용가능하다.</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">숙명</td>
+                                <td class="image"><img src="../images/item/iconItem_3589.png"/></td>
+                                <td class="name">짐모리</td>
+                                <td class="ability">카리스마 +250</td>
+                                <td class="level-limit">레벨 제한 +0</td>
+                                <td class="useitem">관, 마법 지팡이, 날개, 마술봉, 채찍, 낫, 손톱 무기, 책 빗자루, 쌍검, 다크 코어<br>※ '짐모리' 접두사는 두 번째 접두사에 사용가능하다.</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">숙명</td>
+                                <td class="image"><img src="../images/item/iconItem_3589.png"/></td>
+                                <td class="name">가이루트의</td>
+                                <td class="ability">힘 +2<br>레벨 3</td>
+                                <td class="level-limit">레벨 제한 +0</td>
+                                <td class="useitem">장갑, 발톱, 한손검, 양손검, 이빨, 메이스, 단도, 활, 창, 빗자루, 쌍검, 다크 코어, 쌍권총<br>※ '가이루트의' 접두사는 첫 번째와 두 번째 접두사에 사용가능하다.</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">숙명</td>
+                                <td class="image"><img src="../images/item/iconItem_3589.png"/></td>
+                                <td class="name">발라렐의</td>
+                                <td class="ability">민첩 +2<br>레벨 3</td>
+                                <td class="level-limit">레벨 제한 +0</td>
+                                <td class="useitem">발톱, 부츠, 한손검, 양손검, 이빨, 메이스, 단도, 활, 창, 빗자루, 쌍검, 쌍권총<br>※ '발라렐' 접두사는 첫 번째와 두 번째 접두사에 사용가능하다.</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">숙명</td>
+                                <td class="image"><img src="../images/item/iconItem_3589.png"/></td>
+                                <td class="name">러스펠의</td>
+                                <td class="ability">건강 +2<br>레벨 3</td>
+                                <td class="level-limit">레벨 제한 +0</td>
+                                <td class="useitem">발톱, 벨트, 한손검, 양손검, 이빨, 메이스, 단도, 활, 창, 다크코어, 쌍권총<br>※ '러스펠의' 접두사는 첫 번째와 두 번째 접두사에 사용가능하다.</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">숙명</td>
+                                <td class="image"><img src="../images/item/iconItem_3589.png"/></td>
+                                <td class="name">그랑디스의</td>
+                                <td class="ability">운 +2<br>레벨 3</td>
+                                <td class="level-limit">레벨 제한 +0</td>
+                                <td class="useitem">관, 장갑, 발톱, 팔찌, 벨트, 부츠, 목걸이, 모든 무기<br>※ '그랑디스의' 접두사는 첫 번째와 세 번째 접두사에 사용가능하다.</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">숙명</td>
+                                <td class="image"><img src="../images/item/iconItem_3589.png"/></td>
+                                <td class="name">오니톨로의</td>
+                                <td class="ability">지식 +2<br>레벨 3</td>
+                                <td class="level-limit">레벨 제한 +0</td>
+                                <td class="useitem">관, 마법지팡이, 날개, 피리, 슬링, 마술봉, 채찍, 낫, 손톱무기, 책, 빗자루, 쌍검<br>※ '오니톨로의' 접두사는 세 번째 접두사에 사용가능하다.</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">숙명</td>
+                                <td class="image"><img src="../images/item/iconItem_3589.png"/></td>
+                                <td class="name">테마누엘의</td>
+                                <td class="ability">지혜 +2<br>레벨 3</td>
+                                <td class="level-limit">레벨 제한 +0</td>
+                                <td class="useitem">팔찌, 마법지팡이, 날개, 피리, 슬링, 마술봉, 채찍, 낫, 손톱무기, 책, 빗자루, 쌍검<br>※ '테마누엘의' 접두사는 두 번째와 세 번째 접두사에 사용가능하다.</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">숙명</td>
+                                <td class="image"><img src="../images/item/iconItem_3589.png"/></td>
+                                <td class="name">타니아의</td>
+                                <td class="ability">카리스마 +2<br>레벨 3</td>
+                                <td class="level-limit">레벨 제한 +0</td>
+                                <td class="useitem">목걸이, 마법지팡이, 날개, 피라, 슬링, 마술봉, 채찍, 낫, 손톱무기, 책, 빗자루, 쌍검, 다크코어<br>※ '타니아의' 접두사는 두 번째와 세 번째 접두사에 사용가능하다.</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
     </div>
+
     <script src="../js/nav.js"></script>
 
 </body>
