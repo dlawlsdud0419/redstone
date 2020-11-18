@@ -43,6 +43,10 @@ input:focus {outline:none;}
  height: 50px;
 }
 
+.item td{
+    padding : 0.5em;
+   }
+
 .type{
     text-align: center;
     border-right: solid 1px #263343;
