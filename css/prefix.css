@@ -19,12 +19,7 @@
     color: #263343;
     font-size: 18px;
 }
-.reset-input{
-    font-size: 24px;
-    float: right;
-    height: 100%;
-    padding: 2px;
-}
+
 input:focus {outline:none;}
 
 .prefix-container{
@@ -88,7 +83,15 @@ input:focus {outline:none;}
     border-bottom: solid 1px #263343;
     line-height: 1.5em;
 }
+@media screen and (min-width:769px) {
+    .reset-input{
+        font-size: 24px;
+        float: right;
+        height: 100%;
+        padding: 2px;
+    }
 
+}
 @media screen and (max-width:768px) {
     .search{
     background: #E0D3B6;
@@ -107,9 +110,7 @@ input:focus {outline:none;}
         color: #263343;
         font-size: 12px;
     }
-    .reset-input{
-        display: none;
-    }
+
     .prefix-container{
         width: 90%;
         margin: auto;
