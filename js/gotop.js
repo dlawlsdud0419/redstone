@@ -1,18 +1,31 @@
-
 const btn = document.getElementById('btn_gotop');
+const btnclick = document.querySelector('.btn_gotop');
 
 function gototop() {
-    if(document.documentElement.scrollTop > 300){
-        btn.style.display ="block";
+    if (document.documentElement.scrollTop > 300) {
+        btn.style.display = "block";
     } else {
-        btn.style.display ="none";
+        btn.style.display = "none";
     }
 }
-function gotop(){
-    window.scrollTo(0,0);
-}
 
-function init(){
-    setInterval(gototop, 100); 
+function scrollIt() {
+    (function smoothscroll() {
+        var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        if (currentScroll > 0) {
+            window.requestAnimationFrame(smoothscroll);
+            window.scrollTo(0, currentScroll - (currentScroll / 50));
+        }
+    })();
+}
+btnclick.addEventListener('click', scrollIt)
+
+/*function scrollIt(destination, duration = 200, easing = 'linear', callback) {
+  // object with some some timing functions
+  // function body here
+}*/
+
+function init() {
+    setInterval(gototop, 100);
 }
 init();

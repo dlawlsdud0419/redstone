@@ -9,31 +9,7 @@
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet">
 </head>
-<script type="text/javascript">
-    function filter(){
 
-      var value, name, item, i;
-
-      value = document.getElementById("value").value.toUpperCase();
-      item = document.getElementsByClassName("item");
-
-      for(i=0;i<item.length;i++){
-        name = item[i].getElementsByClassName("name");
-        if(name[0].innerHTML.toUpperCase().indexOf(value) > -1){
-          item[i].style.display = "";
-        }else{
-          item[i].style.display = "none";
-        }
-      }
-    }
-    function reset(){
-       document.getElementById("value").value = "";
-       item = document.getElementsByClassName("item");
-       for(var i=0; i<item.length;i++){
-        item[i].style.display = "";
-       }
-    }
-</script>
 <body>
     <div id="wrap">
             <nav id="navbar" class="navbar">
@@ -64,7 +40,7 @@
                 <div class="search-box">
                     <div class="search">
                         <input onkeyup="filter()" type="text" id="value" class="search-text" placeholder="접두사 이름검색(공백 구분합니다.)">
-                        <span class="reset-input"><a href="javascript:void(0);" onclick="reset()"><i class="fa fa-times" aria-hidden="true"></i></a></span>
+                        <span class="reset-input"><a href="javascript:void(0);"class="reset-btn" ><i class="fa fa-times" aria-hidden="true"></i></a></span>
                     </div>
                 </div>
                 <div class="prefix-container">
@@ -672,12 +648,165 @@
                                 <td class="level-limit">레벨 제한 +390</td>
                                 <td class="useitem">전용 갑옷</td>
                             </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">호신의</td>
+                                <td class="ability">블럭률 +3~5%<br></td>
+                                <td class="level-limit">레벨 제한 +5</td>
+                                <td class="useitem">헬멧, 팔찌, 목걸이, 망토, 한손검, 메이스</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">보호의</td>
+                                <td class="ability">블럭률 +5~10%<br></td>
+                                <td class="level-limit">레벨 제한 +18</td>
+                                <td class="useitem">장갑, 전용 갑옷</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">방어의</td>
+                                <td class="ability">블럭률 +10~15<br></td>
+                                <td class="level-limit">레벨 제한 +39</td>
+                                <td class="useitem">방패, 보석</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">방위의</td>
+                                <td class="ability">블럭률 +15~25%<br></td>
+                                <td class="level-limit">레벨 제한 +80</td>
+                                <td class="useitem">방패, 보석</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">DX 보위의</td>
+                                <td class="ability">블럭률 +15~28%<br></td>
+                                <td class="level-limit">레벨 제한 +280</td>
+                                <td class="useitem">방패, 보석</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">Ultimate 철통같은</td>
+                                <td class="ability">블럭률 +25~30%<br></td>
+                                <td class="level-limit">레벨 제한 +380</td>
+                                <td class="useitem">방패, 보석</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">치명적인</td>
+                                <td class="ability">치명타 발동 확률 +2~5%<br></td>
+                                <td class="level-limit">래밸 제한 +7</td>
+                                <td class="useitem">헬멧, 장갑, 팔찌, 목걸이, 전용 갑옷, 날개, 단도, 활, 피리, 슬링, 채찍, 다크코어, 보석, 쌍검, 빗자루</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">치명타의</td>
+                                <td class="ability">치명타 발동 확률 +6~10%<br></td>
+                                <td class="level-limit">래밸 제한 +57</td>
+                                <td class="useitem">장갑대용, 발톱, 한손검, 양손검, 마법지팡이, 이빨, 메이스, 창, 마술봉, 손톱무기, 낫, 책</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">DX 치명의</td>
+                                <td class="ability">치명타 발동 확률 +11~15%<br></td>
+                                <td class="level-limit">래밸 제한 +257</td>
+                                <td class="useitem">장갑대용, 발톱, 한손검, 양손검, 마법지팡이, 이빨, 메이스, 창, 마술봉, 손톱무기, 낫, 책</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">Ultimate 치사의</td>
+                                <td class="ability">치명타 발동 확률 +16~20%<br></td>
+                                <td class="level-limit">래밸 제한 +357</td>
+                                <td class="useitem">장갑대용, 발톱, 한손검, 양손검, 마법지팡이, 이빨, 메이스, 창, 마술봉, 다크코어</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">맞추기 쉬운</td>
+                                <td class="ability">대상의 회피율 보정치 무시<br></td>
+                                <td class="level-limit">레벨 제한 +99</td>
+                                <td class="useitem">팔찌, 마법지팡이, 피리, 채직, 책, 빗자루, 쌍검, 다크코어, 보석</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">절대 명중하는</td>
+                                <td class="ability">명중률 100%</td>
+                                <td class="level-limit">레벨 제한 +100</td>
+                                <td class="useitem">피리, 마법지팡이, 마술봉, 책</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">걷기의</td>
+                                <td class="ability">이동 속도 +5%</td>
+                                <td class="level-limit">레벨 제한 +5</td>
+                                <td class="useitem">헬멧, 관, 벨트, 브로치, 십자가, 어깨 문신, 팔문신, 전용 갑옷</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">산보의</td>
+                                <td class="ability">이동 속도 +10%</td>
+                                <td class="level-limit">레벨 제한 +20</td>
+                                <td class="useitem">목걸이, 귀걸이, 망토</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">산책의</td>
+                                <td class="ability">이동 속도 +15%</td>
+                                <td class="level-limit">레벨 제한 +40</td>
+                                <td class="useitem">보석</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">여행의</td>
+                                <td class="ability">이동 속도 +20%</td>
+                                <td class="level-limit">레벨 제한 +55</td>
+                                <td class="useitem">마법지팡이, 피리, 책</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">모험의</td>
+                                <td class="ability">이동 속도 +30%</td>
+                                <td class="level-limit">레벨 제한 +60</td>
+                                <td class="useitem">부츠</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">DX 유량의</td>
+                                <td class="ability">이동 속도 +30~35%</td>
+                                <td class="level-limit">레벨 제한 +210</td>
+                                <td class="useitem">부츠</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">일반</td>
+                                <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
+                                <td class="name">Ultimate 방랑의</td>
+                                <td class="ability">이동 속도 +35~400%</td>
+                                <td class="level-limit">레벨 제한 +310</td>
+                                <td class="useitem">부츠</td>
+                            </tr>
+
                             
                             <tr class="item">
                                 <td class="type">일반</td>
                                 <td class="image"><img src="../images/item/iconItem_0964.png"/></td>
                                 <td class="name"></td>
-                                <td class="ability"><br></td>
+                                <td class="ability"></td>
                                 <td class="level-limit"></td>
                                 <td class="useitem"></td>
                             </tr>
@@ -841,19 +970,36 @@
                                 <td class="level-limit">레벨 제한 +0</td>
                                 <td class="useitem">전용 갑옷<br>※ '아리엘의' 접두사는 세 번째에 사용가능하다.</td>
                             </tr>
+                            <tr class="item">
+                                <td class="type">숙명</td>
+                                <td class="image"><img src="../images/item/iconItem_3589.png"/></td>
+                                <td class="name">오베론의</td>
+                                <td class="ability">치명타 발동 확률 +25%</td>
+                                <td class="level-limit">레벨 제한 +0</td>
+                                <td class="useitem">장갑대용, 한손검, 양손검, 마법지팡이, 이빨, 메이스, 창, 마술봉, 다크코어<br>※ '오베른의' 접두사는 세 번째에 사용가능하다.</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="type">숙명</td>
+                                <td class="image"><img src="../images/item/iconItem_3589.png"/></td>
+                                <td class="name">니케의</td>
+                                <td class="ability">이동 속도 +50%</td>
+                                <td class="level-limit">레벨 제한 +0</td>
+                                <td class="useitem">부츠<br>※ '니케의' 접두사는 두 번째에 사용가능하다.</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <a href="javascript:void(0);" id="btn_gotop" class="btn_gotop"  onclick="gotop()">
+            <button id="btn_gotop" class="btn_gotop">
                 <i class="fa fa-arrow-up" aria-hidden="true"></i>
-            </a>
+            </button>
             
     </div>
 
     <script src="../js/nav.js"></script>
     <script src="../js/eventcancle.js"></script>
     <script src="../js/gotop.js"></script>
+    <script src="../js/prefix.js"></script>
 
 </body>
 </html>

@@ -1,136 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>크리처</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>무기/장비</title>
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/creatures.css" />
+  <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    https://sokomin.github.io/information/creature2020.html
-    https://sokomin.github.io/information/creature3.html
+  <div id="wrap">
+    <nav id="navbar" class="navbar">
+      <div class="navbar-logo">
+        <i class="fa fa-gg" aria-hidden="true"></i>
+        <a href="../index.html">RED STONE</a>
+      </div>
+
+      <ul class="navbar-menu">
+        <li><a href="../index.html">메인</a></li>
+        <li><a href="./item.html">아이템</a></li>
+        <li><a href="./skill.html">스킬</a></li>
+        <li><a href="./cosbody.html">코스튬</a></li>
+        <li><a href="./prefix.html">접두사</a></li>
+        <li><a href="./creatures.html">크리처</a></li>
+      </ul>
+
+      <ul class="navbar-icons">
+        <li><a href="javascript:alert('개발중')"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="javascript:alert('개발중')"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="javascript:alert('개발중')"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/dlawlsdud0419/redstone"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+      <a href="#" class="navbar-togglebtn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </a>
+    </nav>
+    <div class="creater-box">
+      <h1 class="main-text">크리처 패시브 등급표</h1>
+      <table class="rwd-table">
+        <thead>
+          <tr>
+            <th>등급</th>
+            <th>일반</th>
+            <th>레어</th>
+            <th>하이레어</th>
+            <th>스페셜레어</th>
+            <th>레전드레어</th>
+          </tr>
+        </thead>
+
+        <tr>
+          <td>일반 메인</td>
+          <td>8+ (0 ~ 4)</td>
+          <td>16+ (0 ~ 8)</td>
+          <td>24+ (0 ~ 12)</td>
+          <td>32+ (0 ~ 16)</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>일반 하위</td>
+          <td>4+ (0 ~ 2) </td>
+          <td>8+ (0 ~ 4)</td>
+          <td>12+ (0 ~ 6)</td>
+          <td>16+ (0 ~ 8)</td>
+          <td>20+ (0 ~ 10)</td>
+        </tr>
+        <tr>
+          <td>고급 메인</td>
+          <td>-</td>
+          <td>-</td>
+          <td>?</td>
+          <td>10+ (0 ~ 16)</td>
+          <td>20+ (0 ~ 20)</td>
+        </tr>
+        <tr>
+          <td>고급 서브</td>
+          <td>불가</td>
+          <td>불가</td>
+          <td>3+ (0 ~ 6)</td>
+          <td>5+ (0 ~ 8)</td>
+          <td>10+ (0 ~ 10)</td>
+        </tr>
+      </table>
+      <h1 class="main-text">크리처 패시브 스킬목록</h1>
+      <table class="rwd-table wd-per90">
+        <colgroup>
+          <col width="10%" />
+          <col width="10%" />
+          <col width="*" />
+          <col width="15%" />
+          <col width="5%" />
+          <col width="15%" />
+          <col width="5%" />
+          <col width="15%" />
+          <col width="5%" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>아이콘</th>
+            <th>등급</th>
+            <th>이름</th>
+            <th>메인</th>
+            <th>Lv</th>
+            <th>서브 1</th>
+            <th>Lv</th>
+            <th>서브 2</th>
+            <th>Lv</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="../images/creature2_files/creature_p_0000.png"/></td>
+            <td>일반</td>
+            <td>블리자드 화염 개</td>
+            <td>공격력</td>
+            <td>8</td>
+            <td>경험치</td>
+            <td>4</td>
+            <td>체력 흡수</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td><img src="../images/creature2_files/creature_p_0001.png"/></td>
+            <td>일반</td>
+            <td>푸른 화염 개</td>
+            <td>드랍률</td>
+            <td>8</td>
+            <td>회피율</td>
+            <td>4</td>
+            <td>드랍률</td>
+            <td>4</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="../js/nav.js"></script>
 </body>
+
 </html>
-
-<!--
-
-    <h1>RWD List to Table</h1>
-<table class="rwd-table">
-  <tr>
-    <th>Movie Title</th>
-    <th>Genre</th>
-    <th>Year</th>
-    <th>Gross</th>
-  </tr>
-  <tr>
-    <td data-th="Movie Title">Star Wars</td>
-    <td data-th="Genre">Adventure, Sci-fi</td>
-    <td data-th="Year">1977</td>
-    <td data-th="Gross">$460,935,665</td>
-  </tr>
-  <tr>
-    <td data-th="Movie Title">Howard The Duck</td>
-    <td data-th="Genre">"Comedy"</td>
-    <td data-th="Year">1986</td>
-    <td data-th="Gross">$16,295,774</td>
-  </tr>
-  <tr>
-    <td data-th="Movie Title">American Graffiti</td>
-    <td data-th="Genre">Comedy, Drama</td>
-    <td data-th="Year">1973</td>
-    <td data-th="Gross">$115,000,000</td>
-  </tr>
-</table>
-
-<p>&larr; Drag window (in editor or full page view) to see the effect. &rarr;</p>
-
-
-
-    @import "https://fonts.googleapis.com/css?family=Montserrat:300,400,700";
-.rwd-table {
-  margin: 1em 0;
-  min-width: 300px;
-}
-.rwd-table tr {
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-}
-.rwd-table th {
-  display: none;
-}
-.rwd-table td {
-  display: block;
-}
-.rwd-table td:first-child {
-  padding-top: .5em;
-}
-.rwd-table td:last-child {
-  padding-bottom: .5em;
-}
-.rwd-table td:before {
-  content: attr(data-th) ": ";
-  font-weight: bold;
-  width: 6.5em;
-  display: inline-block;
-}
-@media (min-width: 480px) {
-  .rwd-table td:before {
-    display: none;
-  }
-}
-.rwd-table th,
-.rwd-table td {
-  text-align: left;
-}
-@media (min-width: 480px) {
-  .rwd-table th,
-  .rwd-table td {
-    display: table-cell;
-    padding: .25em .5em;
-  }
-  .rwd-table th:first-child,
-  .rwd-table td:first-child {
-    padding-left: 0;
-  }
-  .rwd-table th:last-child,
-  .rwd-table td:last-child {
-    padding-right: 0;
-  }
-}
-
-body {
-  padding: 0 2em;
-  font-family: sans-serif;
-  color: #444;
-  background: #eee;
-}
-
-h1 {
-  font-weight: normal;
-  letter-spacing: -1px;
-  color: #34495E;
-}
-
-.rwd-table {
-  background: #34495E;
-  color: #fff;
-  border-radius: .4em;
-  overflow: hidden;
-}
-.rwd-table tr {
-  border-color: #46637f;
-}
-.rwd-table th,
-.rwd-table td {
-  margin: .5em 1em;
-}
-@media (min-width: 480px) {
-  .rwd-table th,
-  .rwd-table td {
-    padding: 1em !important;
-  }
-}
-.rwd-table th,
-.rwd-table td:before {
-  color: #dd5;
-}
--->
