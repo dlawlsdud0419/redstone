@@ -1,5 +1,5 @@
 .items-box{
-    width: 1200px;
+    width: 50%;
     text-align: center;
     margin: 0 auto;
     margin-top: 80px;
@@ -43,7 +43,7 @@ table img{vertical-align: middle;}
 }
 
 .info {
-    width: 220px;
+    width: 100%;
     margin-top : 5px;
     padding: 20px 0 10px;
     text-align: center;
@@ -90,4 +90,30 @@ table img{vertical-align: middle;}
     color: #999;
     font-size: 14px;
     letter-spacing: -0.5px;
+}
+@media screen and (min-width:769px and min-width:1919px){
+    .items-box{
+        
+    }
+}
+@media screen and (max-width:768px) {
+    .items-box{
+        width: 100%;
+        margin-top: 40px;
+    }
+   tbody,td, tr { 
+        display: block; 
+    }
+    td{
+        width: 60%;
+        margin: 10px auto;
+    }
+	
+	
+	
+
+   
+    
+  
+	
 }
