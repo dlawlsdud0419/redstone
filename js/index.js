@@ -8,7 +8,6 @@ function init() {
   }, 6000);
   setTimeout(function () {
     document.getElementById("overlay").classList.add("is-open")
-    document.getElementById("canvas-bg").classList.add("is-open")
   }, 6000);
   setTimeout(function () {
     document.getElementById("navbar").style.display = 'flex';

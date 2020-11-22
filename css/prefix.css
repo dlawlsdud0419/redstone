@@ -1,6 +1,17 @@
 
 .prefix-box{
-    margin-top: 20px;   
+    margin-top: 20px;  
+    animation:  prefix 2s ease-in-out; 
+}
+
+@keyframes prefix {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+        
+    }
 }
 .search {
     background: #E0D3B6;

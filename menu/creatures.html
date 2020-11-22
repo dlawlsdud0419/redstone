@@ -38,107 +38,69 @@
         <i class="fa fa-bars" aria-hidden="true"></i>
       </a>
     </nav>
-    <div class="creater-box">
+    <div class="container">
       <h1 class="main-text">크리처 패시브 등급표</h1>
-      <table class="rwd-table">
-        <thead>
-          <tr>
-            <th>등급</th>
-            <th>일반</th>
-            <th>레어</th>
-            <th>하이레어</th>
-            <th>스페셜레어</th>
-            <th>레전드레어</th>
-          </tr>
-        </thead>
+      <div class="row">
+        <div class="col-md-12 col-sm-6">
+          <table class="rwd-table">
+            <colgroup>
+              <col width="15%"/>
+              <col width="15%"/>                
+              <col width="15%"/>                
+              <col width="15%"/> 
+              <col width="15%"/>                
+              <col width="15%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>등급</th>
+                <th>일반</th>
+                <th>레어</th>
+                <th>하이레어</th>
+                <th>스페셜레어</th>
+                <th>레전드레어</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-th="등급">일반 메인</td>
+                <td data-th="일반">8+ (0 ~ 4)</td>
+                <td data-th="레어">16+ (0 ~ 8)</td>
+                <td data-th="하이레어">24+ (0 ~ 12)</td>
+                <td data-th="스페셜레어">32+ (0 ~ 16)</td>
+                <td data-th="레전드레어">-</td>
+              </tr>
+              <tr>
+                <td data-th="등급">일반 하위</td>
+                <td data-th="일반">4+ (0 ~ 2) </td>
+                <td data-th="레어">8+ (0 ~ 4)</td>
+                <td data-th="하이레어">12+ (0 ~ 6)</td>
+                <td data-th="스페셜레어">16+ (0 ~ 8)</td>
+                <td data-th="레전드레어">20+ (0 ~ 10)</td>
+              </tr>
+              <tr>
+                <td data-th="등급">고급 메인</td>
+                <td data-th="일반">-</td>
+                <td data-th="레어">-</td>
+                <td data-th="하이레어">?</td>
+                <td data-th="스페셜레어">10+ (0 ~ 16)</td>
+                <td data-th="레전드레어">20+ (0 ~ 20)</td>
+              </tr>
+              <tr>
+                <td data-th="등급">고급 서브</td>
+                <td data-th="일반">불가</td>
+                <td data-th="레어">불가</td>
+                <td data-th="하이레어">3+ (0 ~ 6)</td>
+                <td data-th="스페셜레어">5+ (0 ~ 8)</td>
+                <td data-th="레전드레어">10+ (0 ~ 10)</td>
+              </tr>
+            </tbody>
 
-        <tr>
-          <td>일반 메인</td>
-          <td>8+ (0 ~ 4)</td>
-          <td>16+ (0 ~ 8)</td>
-          <td>24+ (0 ~ 12)</td>
-          <td>32+ (0 ~ 16)</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>일반 하위</td>
-          <td>4+ (0 ~ 2) </td>
-          <td>8+ (0 ~ 4)</td>
-          <td>12+ (0 ~ 6)</td>
-          <td>16+ (0 ~ 8)</td>
-          <td>20+ (0 ~ 10)</td>
-        </tr>
-        <tr>
-          <td>고급 메인</td>
-          <td>-</td>
-          <td>-</td>
-          <td>?</td>
-          <td>10+ (0 ~ 16)</td>
-          <td>20+ (0 ~ 20)</td>
-        </tr>
-        <tr>
-          <td>고급 서브</td>
-          <td>불가</td>
-          <td>불가</td>
-          <td>3+ (0 ~ 6)</td>
-          <td>5+ (0 ~ 8)</td>
-          <td>10+ (0 ~ 10)</td>
-        </tr>
-      </table>
-      <h1 class="main-text">크리처 패시브 스킬목록</h1>
-      <table class="rwd-table wd-per90">
-        <colgroup>
-          <col width="10%" />
-          <col width="10%" />
-          <col width="*" />
-          <col width="15%" />
-          <col width="5%" />
-          <col width="15%" />
-          <col width="5%" />
-          <col width="15%" />
-          <col width="5%" />
-        </colgroup>
-        <thead>
-          <tr>
-            <th>아이콘</th>
-            <th>등급</th>
-            <th>이름</th>
-            <th>메인</th>
-            <th>Lv</th>
-            <th>서브 1</th>
-            <th>Lv</th>
-            <th>서브 2</th>
-            <th>Lv</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><img src="../images/creature2_files/creature_p_0000.png"/></td>
-            <td>일반</td>
-            <td>블리자드 화염 개</td>
-            <td>공격력</td>
-            <td>8</td>
-            <td>경험치</td>
-            <td>4</td>
-            <td>체력 흡수</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td><img src="../images/creature2_files/creature_p_0001.png"/></td>
-            <td>일반</td>
-            <td>푸른 화염 개</td>
-            <td>드랍률</td>
-            <td>8</td>
-            <td>회피율</td>
-            <td>4</td>
-            <td>드랍률</td>
-            <td>4</td>
-          </tr>
-        </tbody>
-      </table>
+          </table>
+        </div>
+      </div>
     </div>
-  </div>
-  <script src="../js/nav.js"></script>
+    <script src="../js/nav.js"></script>
 </body>
 
 </html>

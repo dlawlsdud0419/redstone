@@ -12,6 +12,9 @@ function over_width(){
         }
     } else {
         start = 0;
+        cos_box = document.getElementsByClassName("cosbody-job");
+        cos_box.style.width = "50%";
+        cos_box.style.margin = "auto";
     }
 }
 
