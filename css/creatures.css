@@ -118,8 +118,8 @@
 @media screen and (max-width: 768px) {
 
   .rwd-table {
-    min-width: 30%;
-    width: 50%;
+    min-width: 70%;
+    width: 70%;
   }
   .rwd-table tbody tr{
     padding: .5em !important;

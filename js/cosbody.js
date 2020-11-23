@@ -1,7 +1,7 @@
 var value, name, item, i, row;
 let start = 1;
 let wi
-
+const coswid = document.getElementById('cosbody-job');
 function over_width(){
     wi = window.innerWidth;
     item = document.getElementsByClassName("tg-row");
@@ -12,9 +12,6 @@ function over_width(){
         }
     } else {
         start = 0;
-        cos_box = document.getElementsByClassName("cosbody-job");
-        cos_box.style.width = "50%";
-        cos_box.style.margin = "auto";
     }
 }
 

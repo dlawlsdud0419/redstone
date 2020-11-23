@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /**
+ * 3D Book Animation
+ */
+
+.book-container {
+	width: 375px;
+	margin: 40px auto 0;
+	display: block;
+	-webkit-perspective: 1200px;
+	-moz-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.book {
+	z-index: 5;
+	box-shadow: 0 2px 4px rbga(0, 0, 0, 0.25);
+	-webkit-transition: 0.75s;
+	-moz-transition: 0.75s;
+	transition: 0.75s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform-origin: 125px 0;
+	-moz-transform-origin: 125px 0;
+	transform-origin: 125px 0;
+}
+
+.book:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 3px;
+	width: 7px;
+	z-index: 20;
+	-webkit-transform: translateZ(1px);
+}
+
+.book:hover {
+	-webkit-transform: translateX(-10px) translateZ(35px) translateX(35px) rotateY(90deg);
+	-moz-transform: translateX(-10px) translateZ(35px) translateX(35px) rotateY(90deg);
+	transform: translateX(-10px) translateZ(35px) translateX(35px) rotateY(90deg);
+}
+
+.book-cover {
+	position: relative;
+	z-index: 10;
+}
+
+.book-cover img {
+	vertical-align: bottom;
+	max-width: 100%;
+	height: auto;
+}
+
+.book-spine {
+	background: url(https://dl.dropbox.com/u/122540013/img/book/book-spine.jpg) -64px 0 no-repeat;
+	background-size: auto 100%;
+	position: absolute;
+	color: white;
+	bottom: 0;
+	top: 0;
+	width: 50px;
+	z-index: 5;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+	-webkit-transform: rotateY(-90deg) translateX(-49px); 
+	-moz-transform: rotateY(-90deg) translateX(-49px); 
+	transform: rotateY(-90deg) translateX(-49px); 
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.book-spine span {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 2em;
+	font-weight: normal;
+	opacity: .75; 
+	display: block;
+	width: 325px;
+	text-align: left;
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 3px; 
+	text-indent: 45px;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	-webkit-transform: rotateZ(90deg);
+	-moz-transform: rotateZ(90deg);
+	transform: rotateZ(90deg);
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.book-spine:before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background(0, 0, 0, .3);
+}
+    </style>
+</head>
+<body>
+    <!-- content to be placed inside <body>…</body> -->
+<div class="book-container">
+	<div class="book">
+		<div class="book-cover">
+			<img src="./images/9080607321ab98fa3e70dd24b2513a20.gif">
+		</div>
+		<div class="book-spine">
+			<span>Typography</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>

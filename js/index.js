@@ -11,10 +11,14 @@ function init() {
   }, 6000);
   setTimeout(function () {
     document.getElementById("navbar").style.display = 'flex';
+    document.getElementById("unique").style.display = 'flex';
   }, 7000);
+
+
 
   //document.getElementById("overlay").classList.add("is-open");
 }
+
 
 function todo_percent() {
   const per = document.getElementById('loading-percent');
@@ -30,8 +34,6 @@ function todo_percent() {
     }
   }
 }
-
-
 
 
 init();
