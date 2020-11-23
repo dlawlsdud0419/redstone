@@ -93,7 +93,7 @@ table {
 
 .loading-name {
     position: absolute;
-    bottom: calc(50% + 25px);
+    bottom: calc(40%);
     left: 0;
     width: 100%;
     text-align: center;
@@ -738,5 +738,14 @@ table {
   .slide li:nth-child(6){background:url(../images/bg5.jpg); background-size: contain; background-repeat: no-repeat; background-position: center;}
 
  .onclick_unique{
-     height: 60vh;
+     height: 50vh;
+ }
+
+ .loading-logo {
+    position: absolute;
+    bottom: calc(50% + 0px);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
  }
