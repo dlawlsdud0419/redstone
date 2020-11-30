@@ -13,9 +13,6 @@ function init() {
     document.getElementById("navbar").style.display = 'flex';
     document.getElementById("unique").style.display = 'flex';
   }, 7000);
-
-
-
   //document.getElementById("overlay").classList.add("is-open");
 }
 

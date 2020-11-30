@@ -81,6 +81,7 @@ table {
     font-weight: 600;
     letter-spacing: .4em;
     visibility: hidden;
+    overflow: hidden;
     opacity: 0;
     /*transition: visibility .2s linear 0s,opacity .2s cubic-bezier(.47,0,.745,.715) 0s;*/
 }
@@ -683,18 +684,6 @@ table {
     }
 }
 
-@media (prefers-color-scheme:dark) {
-
-    .loading-name {
-        position: absolute;
-        bottom: calc(50% + 25px);
-        left: 0;
-        width: 100%;
-        text-align: center;
-        color: rosybrown;
-    }
-  
-}
 
 
 .unique{
@@ -743,9 +732,72 @@ table {
 
  .loading-logo {
     position: absolute;
-    bottom: calc(50% + 0px);
+    bottom: calc(50% + 20px);
     left: 0;
     width: 100%;
     text-align: center;
     font-weight: bold;
+ }
+
+ .left-side-img, .right-side-img{
+     display: none;
+ }
+ 
+ @media screen and (min-width:1280px) {
+    .left-side-img, .right-side-img{
+        display: block;
+    }
+    .left-side-img{
+        position: absolute;
+        left:0;
+        width: 40%;
+        height: 100%;
+        text-align: left;
+        animation: left 1s ease-out;
+    }
+   
+    @keyframes left {
+       0%{
+           margin-left: -100%;
+       }
+       50%{
+           margin-left: 5%;
+       }
+       100%{
+           margin-left: 0%;
+       }
+   
+    }
+    
+   
+    .right-side-img{
+       position: absolute;
+       right: 0;
+       width: 40%;
+       height: 100%;
+       text-align: right;
+       animation: right 1s ease-out;
+   }
+   
+   @keyframes right {
+   
+        0%{
+            margin-right: -100%;
+        }
+        50%{
+            margin-right: 5%;
+        }
+        100%{
+            margin-right: 0%;
+        }
+    
+     }
+    .left-side-img img {
+        height: inherit;
+        width: 100%;
+    }
+    .right-side-img img{
+       height: inherit;
+       width: 100%;
+    }
  }
