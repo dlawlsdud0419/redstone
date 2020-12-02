@@ -801,3 +801,17 @@ table {
        width: 100%;
     }
  }
+
+ .btn_gotop{
+    display: none;
+	position:fixed;
+	bottom:30px;
+	right:10px;
+	z-index:999;
+	border:1px solid #263343;
+	outline:none;
+	background-color: #263343;
+	color:#fff;
+	cursor:pointer;
+    padding:10px;
+}

@@ -147,3 +147,97 @@
     text-align: center;
   }
 }
+
+
+.creature{
+  display: flex;
+  margin-top: 60px;
+}
+
+.creature-box{
+  margin: auto;
+  align-self: center;
+}
+
+.creature-table{
+    width: 960px;
+    max-width: 960px;
+    border: 1px #555555 solid;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.creature-table thead tr th{
+  height: 28px;
+}
+
+
+
+.creature-table th{
+  padding: 3px;
+  border: #555555 solid;
+  border-width: 0 0 1px 1px;
+  background: #9d896c;
+  font-weight: bold;
+  line-height: 120%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.creature-table td{
+  padding: 3px;
+    border: 1px #555555 solid;
+    border-width: 0 0 1px 1px;
+    color: #030303;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+@media screen and (max-width:980px){
+  .creature-table{
+    width: 720px;
+    max-width: 720px;
+  }
+  .creature-table tr{
+      width: 100%;
+      display: revert;
+  }
+}
+
+@media screen and (max-width:768px){
+  .creature-table{
+    width: 600px;
+    max-width: 600px;
+  }
+  .creature-table tr{
+      width: 100%;
+      display: revert;
+  }
+}
+
+@media screen and (max-width:620px){
+  .creature-table{
+    width: 480px;
+    max-width: 480px;
+  }
+  .creature-table tr{
+      width: 100%;
+      display: revert;
+  }
+}
+
+
+@media screen and (max-width:480px){
+  .creature-table{
+    font-size: 8px;
+    width: 320px;
+    max-width: 320px;
+  }
+  .creature-table tr{
+      width: 100%;
+      display: revert;
+  }
+}
