@@ -826,6 +826,6 @@ table {
 	width: 0%;
 	height: 5px;
 	background: #0867e2;
-	-webkit-transition: width 0.2s ease-out; /* Safari */
-	transition: width 0.2s ease-out;
+	-webkit-transition: width 0.1s ease-out; /* Safari */
+	transition: width 0.1s ease-out;
 }
