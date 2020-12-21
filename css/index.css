@@ -815,3 +815,17 @@ table {
 	cursor:pointer;
     padding:10px;
 }
+
+/* 프로그래스 바 */
+.progress-container {
+	position: fixed;
+	width: 100%;
+    z-index: 9999;
+}
+.progress-bar {
+	width: 0%;
+	height: 2px;
+	background: #bdecb6;
+	-webkit-transition: width 0.2s ease-out; /* Safari */
+	transition: width 0.2s ease-out;
+}
