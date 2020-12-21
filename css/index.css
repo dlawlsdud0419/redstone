@@ -824,8 +824,8 @@ table {
 }
 .progress-bar {
 	width: 0%;
-	height: 2px;
-	background: #bdecb6;
+	height: 5px;
+	background: #0867e2;
 	-webkit-transition: width 0.2s ease-out; /* Safari */
 	transition: width 0.2s ease-out;
 }
